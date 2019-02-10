@@ -92,6 +92,9 @@ nnoremap <silent> <Leader>f <esc>:tabnext<CR>
 vnoremap < <gv
 vnoremap > >gv
 
+" map öö to ESC (german keyboard-layout)
+inoremap <silent> öö <esc>
+
 let java_highlight_functions = 1
 let java_highlight_all = 1
 
