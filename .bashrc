@@ -19,9 +19,8 @@ alias grep="grep --color=auto"
 #
 alias sdnf="sudo dnf"
 alias v="vim"
-alias r="ranger"
-alias n="nnn"
 alias g="git"
+alias ic=". ~/.scripts/instantcoffee.sh"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/hdoerner/.sdkman"
