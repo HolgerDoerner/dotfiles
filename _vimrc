@@ -70,7 +70,7 @@ set nowritebackup
 set noswapfile
 set hlsearch
 
-let mapleader=","
+let mapleader="<"
 
 " make searches case insensitive
 set smartcase ignorecase
@@ -101,7 +101,7 @@ vnoremap < <gv
 vnoremap > >gv
 
 " map öö to ESC (german keyboard-layout)
-inoremap <silent> öö <esc>
+noremap <silent> öö <esc>
 
 let java_highlight_functions = 1
 let java_highlight_all = 1

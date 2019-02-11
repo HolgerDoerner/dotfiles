@@ -10,6 +10,9 @@ call vundle#begin()
     Plugin 'majutsushi/tagbar'
     Plugin 'tpope/vim-fugitive'
     Plugin 'artur-shaik/vim-javacomplete2'
+    Plugin 'airblade/vim-rooter'
+    Plugin 'bronson/vim-trailing-whitespace'
+    Plugin 'plasticboy/vim-markdown'
 
     Plugin 'vim-airline/vim-airline'
     Plugin 'vim-airline/vim-airline-themes'
@@ -31,12 +34,12 @@ colorscheme synthwave
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
 set pastetoggle=<F12>
-"set clipboard=unnamed
-
+set encoding=utf-8
+set fileencoding=utf-8
 set path+=**
 set wildmenu
 set ttimeoutlen=10 "leaving insert-mode faster
-set complete=.,w,b,u,t,i
+"set complete=.,w,b,u,t,i
 set completeopt=longest,menuone
 set omnifunc=syntaxcomplete#Complete
 set noshowmode "not needed when airline-plugin is enabled
@@ -62,10 +65,10 @@ set nowritebackup
 set noswapfile
 set hlsearch
 
-let mapleader=","
+let mapleader="<"
 
 " make searches case insensitive
-set ignorecase
+set smartcase ignorecase
 
 " airline config
 let g:airline#extensions#tabline#enabled = 1
@@ -93,7 +96,7 @@ vnoremap < <gv
 vnoremap > >gv
 
 " map öö to ESC (german keyboard-layout)
-inoremap <silent> öö <esc>
+noremap <silent> öö <esc>
 
 let java_highlight_functions = 1
 let java_highlight_all = 1
