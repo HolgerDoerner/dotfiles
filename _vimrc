@@ -13,10 +13,10 @@ call vundle#begin()
     Plugin 'airblade/vim-rooter'
     Plugin 'bronson/vim-trailing-whitespace'
     Plugin 'plasticboy/vim-markdown'
+    Plugin 'sheerun/vim-polyglot'
 
     Plugin 'vim-airline/vim-airline'
     Plugin 'vim-airline/vim-airline-themes'
-    Plugin 'TroyFletcher/vim-colors-synthwave'
 
     "Plugin 'NLKNguyen/papercolor-theme'
     Plugin 'dikiaap/minimalist'
@@ -93,8 +93,8 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-nnoremap <silent> <Leader>d <esc>:tabprevious<CR>
-nnoremap <silent> <Leader>f <esc>:tabnext<CR>
+nnoremap <silent> <Leader>h <esc>:tabprevious<CR>
+nnoremap <silent> <Leader>l <esc>:tabnext<CR>
 
 " indent highlighted block
 "
