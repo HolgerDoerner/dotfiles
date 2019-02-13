@@ -19,7 +19,9 @@ call vundle#begin()
     Plugin 'vim-airline/vim-airline-themes'
 
     "Plugin 'NLKNguyen/papercolor-theme'
-    Plugin 'dikiaap/minimalist'
+    "Plugin 'dikiaap/minimalist'
+    "Plugin 'TroyFletcher/vim-colors-synthwave'
+    Plugin 'chriskempson/base16-vim'
 call vundle#end()
 
 filetype plugin indent on
@@ -28,7 +30,8 @@ let &t_Co=256
 set termguicolors
 
 set background=dark
-colorscheme minimalist
+let base16colorspace=256
+colorscheme base16-brewer
 
 " enable advanced java-completetion
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
@@ -36,7 +39,6 @@ autocmd FileType java setlocal omnifunc=javacomplete#Complete
 set pastetoggle=<F12>
 set encoding=utf-8
 set fileencoding=utf-8
-
 set path+=**
 set wildmenu
 set ttimeoutlen=10 "leaving insert-mode faster
@@ -74,7 +76,7 @@ set smartcase ignorecase
 " airline config
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme='minimalist'
+"let g:airline_theme='minimalist'
 
 " shortcut for NERDTree
 nnoremap <silent> <C-e> :NERDTreeToggle<CR>
