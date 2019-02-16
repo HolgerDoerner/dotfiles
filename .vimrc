@@ -5,6 +5,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
 	Plugin 'VundleVim/Vundle.vim'
+    Plugin 'aserebryakov/vim-todo-lists'
     Plugin 'jiangmiao/auto-pairs'
 	Plugin 'scrooloose/nerdtree'
     Plugin 'majutsushi/tagbar'
