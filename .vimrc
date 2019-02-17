@@ -22,7 +22,7 @@ call vundle#begin()
     "Plugin 'NLKNguyen/papercolor-theme'
     "Plugin 'dikiaap/minimalist'
     "Plugin 'TroyFletcher/vim-colors-synthwave'
-    Plugin 'chriskempson/base16-vim'
+    ""Plugin 'chriskempson/base16-vim'
 call vundle#end()
 
 filetype plugin indent on
@@ -32,7 +32,7 @@ set termguicolors
 
 set background=dark
 let base16colorspace=256
-colorscheme base16-brewer
+""colorscheme base16-brewer
 
 " enable advanced java-completetion
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
