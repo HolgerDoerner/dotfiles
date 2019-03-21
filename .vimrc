@@ -16,8 +16,8 @@ call vundle#begin()
     Plugin 'plasticboy/vim-markdown'
     Plugin 'sheerun/vim-polyglot'
 
-    Plugin 'vim-airline/vim-airline'
-    Plugin 'vim-airline/vim-airline-themes'
+    "Plugin 'vim-airline/vim-airline'
+    "Plugin 'vim-airline/vim-airline-themes'
 
     "Plugin 'NLKNguyen/papercolor-theme'
     "Plugin 'dikiaap/minimalist'
@@ -30,9 +30,10 @@ syntax enable
 let &t_Co=256
 set termguicolors
 
-set background=dark
-let base16colorspace=256
+set background=light
+"let base16colorspace=256
 ""colorscheme base16-brewer
+colorscheme default
 
 " enable advanced java-completetion
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
@@ -46,7 +47,7 @@ set ttimeoutlen=10 "leaving insert-mode faster
 "set complete=.,w,b,u,t,i
 set completeopt=longest,menuone
 set omnifunc=syntaxcomplete#Complete
-set noshowmode "not needed when airline-plugin is enabled
+set showmode "not needed when airline-plugin is enabled
 set laststatus=2
 set splitbelow splitright
 set wrap linebreak nolist
@@ -75,9 +76,8 @@ let mapleader="<"
 set smartcase ignorecase
 
 " airline config
-let g:airline#extensions#tabline#enabled = 1
+"let g:airline#extensions#tabline#enabled = 1
 ""let g:airline_powerline_fonts = 1
-
 "let g:airline_theme='minimalist'
 
 " shortcut for NERDTree
